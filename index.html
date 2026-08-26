@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ченжлоги | Chekak</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Chekak">
+      <img src="logo.svg" alt="Chekak">
+    </a>
+    <nav class="header-nav" aria-label="Основная навигация">
+      <a href="https://about.chekak.xyz">О нас</a>
+      <a href="https://chekak.xyz">Перейти</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="intro">
+      <p class="eyebrow">Обновления проекта</p>
+      <h1>Ченжлоги</h1>
+      <p class="intro-copy">Коротко о новых функциях, изменениях и исправлениях Chekak.</p>
+    </section>
+
+    <section class="toolbar" aria-label="Поиск записей">
+      <label class="search-field">
+        <span class="sr-only">Поиск по ченжлогам</span>
+        <input id="search-input" type="search" placeholder="Поиск по заголовкам и тексту">
+      </label>
+      <span class="entry-count" id="entry-count"></span>
+    </section>
+
+    <section class="entries" id="entries" aria-live="polite"></section>
+    <section class="empty-state" id="empty-state" hidden>
+      <strong>Записей пока нет</strong>
+      <p>Обновления появятся здесь позже.</p>
+    </section>
+    <p class="load-error" id="load-error" hidden>Не удалось загрузить список изменений.</p>
+  </main>
+
+  <script src="change-data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
