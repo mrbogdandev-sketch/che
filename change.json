@@ -11,6 +11,16 @@
         "images/changelog/f66d0fa6-0aba-498c-b39b-52f697143d30-1-screenshot-2026-08-26-102738.png",
         "images/changelog/f66d0fa6-0aba-498c-b39b-52f697143d30-1-screenshot-2026-08-26-102750.png"
       ]
+    },
+    {
+      "id": "46699e13-9dd7-420c-b4c7-5639e82d9c87",
+      "version": "0.2.2",
+      "date": "2026-08-28",
+      "title": "Незначительное обновление",
+      "body": "Добавлены заглушки если сервер упал/неработает.",
+      "images": [
+        "images/changelog/46699e13-9dd7-420c-b4c7-5639e82d9c87-1-photo-2026-08-28-12-46-01.jpg"
+      ]
     }
   ]
 }
