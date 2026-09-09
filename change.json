@@ -69,6 +69,14 @@
       "images": [
         "images/changelog/authwithnumb.png"
       ]
+    },
+    {
+      "id": "f1a2b3c4-d5e6-7f8a-9b0c-1d2e3f4a5b6c",
+      "version": "1.0.3",
+      "date": "2026-09-09",
+      "title": "Загрузка музыки",
+      "body": "Теперь можно загружать музыку продолжительностью до 4 минут.",
+      "images": []
     }
   ]
 }
