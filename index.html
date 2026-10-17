@@ -3,43 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ченжлоги | ЧеКак</title>
+  <meta name="description" content="История обновлений ЧеКак.">
+  <title>ченжлоги чекак</title>
   <link rel="icon" href="logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="/" aria-label="Chekak">
-      <img src="logo.svg" alt="Chekak">
-    </a>
-    <nav class="header-nav" aria-label="Основная навигация">
-      <a href="https://about.chekak.xyz">О нас</a>
-      <a href="https://chekak.xyz">Перейти</a>
+    <a class="brand" href="https://chekak.xyz"><img src="logo.svg" width="110" alt="ЧеКак"></a>
+    <nav aria-label="основная навигация">
+      <a href="https://about.chekak.xyz">о проекте</a>
+      <a href="https://chekak.xyz">открыть чекак</a>
     </nav>
   </header>
 
-  <main class="page-shell">
-    <section class="intro">
-      <p class="eyebrow">Обновления проекта</p>
-      <h1>Ченжлоги</h1>
-      <p class="intro-copy">Коротко о новых функциях, изменениях и исправлениях в соцсети ЧеКак</p>
+  <main>
+    <section class="page-heading">
+      <div>
+        <h1>ченжлоги чекак</h1>
+        <p>что нового было и что исправнлено.</p>
+      </div>
+      <div class="search-tools">
+        <label for="search-input">поиск по ченжлогам:</label>
+        <div class="search-row">
+          <input id="search-input" type="search" placeholder="введи слово">
+          <button id="clear-search" type="button">сбросить</button>
+        </div>
+        <p id="results-count" aria-live="polite"></p>
+      </div>
     </section>
 
-    <section class="toolbar" aria-label="Поиск записей">
-      <label class="search-field">
-        <span class="sr-only">Поиск по ченжлогам</span>
-        <input id="search-input" type="search" placeholder="Поиск по заголовкам и тексту">
-      </label>
-      <span class="entry-count" id="entry-count"></span>
-    </section>
+    <div class="page-layout">
+      <aside class="archive" aria-label="дерево ченжлогов">
+        <details id="archive-disclosure" open>
+          <summary>дерево ченжлогов <span id="archive-count"></span></summary>
+          <nav id="archive-tree" aria-label="обновления по датам"></nav>
+        </details>
+      </aside>
 
-    <section class="entries" id="entries" aria-live="polite"></section>
-    <section class="empty-state" id="empty-state" hidden>
-      <strong>Записей пока нет</strong>
-      <p>Обновления появятся здесь позже.</p>
-    </section>
-    <p class="load-error" id="load-error" hidden>Не удалось загрузить список изменений.</p>
+      <section class="feed" aria-label="список ченжлогов">
+        <section id="entries" aria-live="polite"></section>
+        <p id="empty-state" hidden>ничего не найдено.</p>
+        <p id="load-error" hidden>список не загрузился.</p>
+      </section>
+    </div>
   </main>
+
+  <footer class="site-footer">
+    <a href="https://chekak.xyz">чекак</a>
+    <span>история обновлений.</span>
+  </footer>
 
   <script src="change-data.js"></script>
   <script src="main.js"></script>
